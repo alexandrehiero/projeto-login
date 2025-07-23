@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+:root {
+    --Branco : white; 
+    --Preto : black;
+    --Verde: #49a09d;
+    --Roxo: #5f2c82;
+}
+
+/*Tablet*/
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to bottom, var(--Roxo), var(--Verde));
+    }
+
+    section#login {
+        width: 700px;
+        height: 300px;
+    }
+
+    section > div#imagem {
+        height: 300px;
+        width: 240px;
+
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0px;
+        display: inline-block;
+    }
+
+    section > div#formulario {
+        display: inline-block;
+        width: 450px;
+
+        position: absolute;
+    }
+
+
+    input.caixadeescrever {
+        width: 380px;
+        left: 11.5%;
+    }
+
+    input.enviarelimpar {
+        width: 430px;
+    }
+}
+
+
+
+/*PC*/
+
+@media screen and (min-width: 993px) {
+    body {
+        background-image: linear-gradient(to bottom, var(--Roxo), var(--Verde));
+    }
+
+    section#login {
+        width: 950px;
+        height: 350px;
+    }
+
+    section > div#imagem {
+        height: 350px;
+        width: 427.5px;
+
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        display: inline-block;
+
+        position: absolute;
+        left: 55%;
+    }
+
+    section > div#formulario {
+        display: inline-block;
+        width: 510px;
+
+        position: absolute;
+        left: 0.6%;
+        top: 5%;
+    }
+
+    div.emailesenha {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+
+    input.caixadeescrever {
+        width: 432.5px;
+        left: 11.5%;
+    }
+
+    input.enviarelimpar {
+        width: 490px;
+    }
+}
