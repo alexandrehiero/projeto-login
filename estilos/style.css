@@ -6,3 +6,107 @@
     --Verde: #49a09d;
     --Roxo: #5f2c82;
 }
+
+
+html {
+    width: 100vw;
+    height: 100vh;    
+}
+
+body { 
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: var(--Roxo);
+}
+
+section#login {
+    width: 350px;
+    height: 600px;
+
+    background-color: var(--Branco);
+    border-radius: 20px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section > div#imagem {
+    background: url(../imagens/pexels-hui-yi-chong-1765071594-28569413.jpg) center center no-repeat;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-size: cover;
+
+    height: 260px;
+}
+
+section > div#formulario > h1 {
+    text-align: center;
+}
+
+section > div#formulario > p {
+    text-align: justify;
+    margin: 0px 10px;
+    padding-bottom: 10px;
+    text-indent: 15px;
+}
+
+div.emailesenha {
+    background-color: var(--Roxo);
+    margin: 10px;
+    border-radius: 5px;
+}
+
+i {
+    color: white; 
+    margin: 7px;
+}
+
+/*Configurações input E-mail e Senha*/
+input.caixadeescrever {
+    display: inline-block;
+
+    width: 270px;
+    height: 20px;
+    margin: 10px;
+}
+
+
+/*Configurações input Enviar e Limpar*/
+input.enviarelimpar {
+    margin: 10px;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+
+    color: var(--Branco);
+    background-color: var(--Verde);
+    
+    display: block;
+    width: 330px;
+    height: 30px;
+}
+
+input#limpar {
+    background-color: var(--Branco);
+    color: var(--Verde);
+    border: 2px solid var(--Verde);
+}
+
+input.enviarelimpar:hover {
+    border: 2px solid var(--Preto);
+    background-color: #34716f;
+}
+
+input#limpar:hover {
+    border: 2px solid var(--Preto);
+    background-color: #34716f;
+    color: white;
+}
+
