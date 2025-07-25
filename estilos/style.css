@@ -9,7 +9,7 @@
 
 ::-webkit-scrollbar {width: 0px; height: 0px;}
 
-html {
+html, body, main {
     width: 100vw;
     height: 100vh;    
 }
@@ -35,6 +35,8 @@ section#login {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    transition: width 0.5s, heith 0.5s;
 }
 
 section > div#imagem {
@@ -45,6 +47,7 @@ section > div#imagem {
     background-size: cover;
 
     height: 260px;
+    display: block;
 }
 
 section > div#formulario > h1 {
@@ -52,6 +55,7 @@ section > div#formulario > h1 {
 }
 
 section > div#formulario > p {
+    display: block;
     text-align: justify;
     margin: 0px 10px;
     padding-bottom: 5px;
